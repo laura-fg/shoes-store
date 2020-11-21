@@ -16,5 +16,5 @@ Sobre
 
 Acesse aqui: 
 
-[Shoe Store](https://laura-fg.github.io/SHOE-LOJA/)
+[Shoe Store](https://laura-fg.github.io/shoes-store/)
 =======
