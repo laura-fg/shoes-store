@@ -1,0 +1,130 @@
+<!DOCTYPE <!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> 
+      Shoe Store</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+
+      <div class="part-1">
+        <div class="logo">
+         <img src="img/logo.png"> 
+         <h1> 
+          Shoe Store</h1>
+        </div>
+
+       <div class="part-2">
+        <div id="divBusca">
+          <input type="text" id="txtBusca" placeholder="Pesquisar"/>
+          <img src="img/search.png" id="btnBusca" alt="Buscar"/>
+        </div>
+
+         <div class="container">
+         <div  class="login"> <!-- LOGIN-->
+          <ul>
+            <li><a href="#"> Entre</a> </li>
+            <li> ou </li>
+            <li><a href="#"> Cadastre-se</a> </li>
+          </ul>
+       </div>
+         
+         <div class="compras"> <img src="img/cart.png">
+          <p id="carrinhoIndex">  </p>
+         </div>
+        </div>
+
+        </div>
+      </div>
+
+        <nav> <!-- MENU-->
+          <ul>
+            <li> <a href="#"> HOME/</a></li>
+            <li> <a href="#"> CALÇADOS/</a></li>
+            <li> <a href="#"> PRODUTO ABC</a></li>
+          </ul>
+        </nav>
+    </header>
+
+
+    <section class="main"> <!-- PRODUTOS -->
+      <div class="produto">
+        <img src="img/product.png">
+      </div>
+
+      <div class="info">
+        <h2> Produto ABC</h2>
+        <p class="p-info"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non posuere <br>
+           ante, id lobortis ligula. Sed blandit felis nisl, id euismod nisi rutrum ac.<br>
+           Maecenas tincidunt, tellus id fermentum dignissim, nibh nulla facilisis erat,<br>
+            nec eleifend dolor urna sit amet nulla.</p>
+
+        <p class="valor-0"> R$ 199,00</p>
+
+        <div class="valor"> <!-- VALOR EM DESTAQUE -->
+          <p class="valor-1"> R$ 159,00 </p>
+          <p> no boleto com <br>10% de desconto</p>
+        </div>
+
+        <div class="nota"> <!-- NOTAS/AVALIAÇÃO-->
+          <img src="img/star-on.png">
+          <img src="img/star-on.png">
+          <img src="img/star-on.png">
+          <img src="img/star-on.png">
+          <img src="img/star-off.png">
+          <p id="avalie" onclick="novaAvaliacao()"> Avalie agora</p>
+        </div>
+     
+          <button class="comprar" id="comp" type="button" onclick="acrescentar()"> 
+           <img src="img/check.png"> <p>COMPRAR</p>
+          </button>
+
+          <p class="op"> Opinião:</p>
+          <p class="op-1" id="comentario"> "Adorei o produto, vou comprar outro em breve."</p>
+          <p id="autor"> - Alberto Guerra</p>
+      </div>
+    </section>
+
+
+    <section class="descricao"> <!-- DESCRIÇÃO/DETALHES DO PRODUTO-->
+       
+      <div class="botoes">
+        <button class="btn-1" onclick="verDescricao()">  DESCRIÇÃO</button>
+        <button class="btn-2" onclick="verItens()"> ITENS INCLUSOS</</button>
+        <button class="btn-3" onclick="verGarantia()">  GARANTIA</button>
+      </div>
+      <div class="desc-produto">
+        <p> PRODUTO ABC </p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc non posuere ante, id lobortis ligula. Sed blandit felis nisl, id euismod nisi rutrum ac. Maecenas tincidunt, tellus id<br> fermentum dignissim,nibh nulla facilisis erat, nec eleifend dolor urna sit amet nulla.</p>
+      </div>
+
+      
+      <div class="itens">
+        <p> ITENS INCLUSOS</p>
+        <ul>
+          <li>1 par de tênis </li>
+          <li>2 pares de cadarços</li>
+        </ul>
+      </div>
+
+      <div class="garantia">
+        <p>GARANTIA</p>
+        <ul>
+          <li> Garantida de 7 dias pela loja. </li>
+          <li> Garantia de 90 dias pelo fabricante.</li>
+        </ul>
+      </div>
+
+    </section>
+    
+    <script src="js/functions.js" async defer></script>
+  </body>
+</html>
